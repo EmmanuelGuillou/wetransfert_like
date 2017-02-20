@@ -14,9 +14,11 @@ $email_subject2 = "Vous avez envoyé un fichier depuis Kitsune";
 // Le message dans l'email
 $email_message =  file_get_contents('../view/templates/basic.php');
 
+$headers = 'Content-type: text/html; charset = utf-8' . "\r\n";
+
 // L'envoie de mail aux deux gens
-mail($email_to, $email_subject, $email_message);
-mail($email_to2, $email_subject2, $email_message);
+mail($email_to, $email_subject, $email_message, $headers);
+mail($email_to2, $email_subject2, $email_message, $headers);
 
 }
 
