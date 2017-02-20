@@ -15,7 +15,7 @@ class FORM{
 
 //Fonction qui crée un input file
     public function input_file($label, $name){
-        echo '<label>'.$label.'</label><input type="file" name="'.$name.'"><br/>';
+        echo '<label>'.$label.'</label><input type="hidden" name="MAX_FILE_SIZE" value="52428800" /><input id="mon_fichier" type="file" name="'.$name.'"><br/>';
     }
 
 //Fonction qui crée un textarea
