@@ -1354,32 +1354,32 @@ body.outlook p {
     table.button.small-expand center,
     table.button.small-expanded center {
       min-width: 0; } }
-    
-    </style>  
+
+    </style>
 
     <style>
       .header {
         background: #8a8a8a;
       }
-      
+
       .header .columns {
         padding-bottom: 0;
       }
-      
+
       .header p {
         color: #fff;
         margin-bottom: 0;
       }
-      
+
       .header .wrapper-inner {
         padding: 20px;
         /*controls the height of the header*/
       }
-      
+
       .header .container {
         background: #8a8a8a;
       }
-      
+
       .wrapper.secondary {
         background: #f3f3f3;
       }
@@ -1414,7 +1414,7 @@ body.outlook p {
                                   <table>
                                     <tr>
                                       <th>
-                                        <p class="text-right">BASIC</p>
+                                        <p class="text-right">Kitsune</p>
                                       </th>
                                     </tr>
                                   </table>
@@ -1447,15 +1447,13 @@ body.outlook p {
                             <table>
                               <tr>
                                 <th>
-                                  <h1>Hi, Susan Calvin</h1>
-                                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iste, amet consequatur a veniam.</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut optio nulla et, fugiat. Maiores accusantium nostrum asperiores provident, quam modi ex inventore dolores id aspernatur architecto odio minima perferendis, explicabo.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quos quasi itaque beatae natus fugit provident delectus, magnam laudantium odio corrupti sit quam. Optio aut ut repudiandae velit distinctio asperiores?</p>
+                                  <h1>Hi,</h1>
+                                  <p class="lead">You have received a file !</p>
+                                  <p>You can find the link righ below.</p>
                                   <table class="callout">
                                     <tr>
                                       <th class="callout-inner primary">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit repellendus natus, sint ea optio dignissimos asperiores inventore a molestiae dolorum placeat repellat excepturi mollitia ducimus unde doloremque
-                                          ad, alias eos!</p>
+                                        <p><a href="<?php echo vers le lien ?>">Link to the file</a></p>
                                       </th>
                                       <th class="expander"></th>
                                     </tr>
@@ -1475,45 +1473,6 @@ body.outlook p {
                             <tbody>
                               <tr>
                                 <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table class="row">
-                            <tbody>
-                              <tr>
-                                <th class="small-12 large-6 columns first">
-                                  <table>
-                                    <tr>
-                                      <th>
-                                        <h5>Connect With Us:</h5>
-                                        <table class="menu vertical">
-                                          <tr>
-                                            <td>
-                                              <table>
-                                                <tr>
-                                                  <th style="text-align: left;" class="menu-item float-center"><a href="#">Twitter</a></th>
-                                                  <th style="text-align: left;" class="menu-item float-center"><a href="#">Facebook</a></th>
-                                                  <th style="text-align: left;" class="menu-item float-center"><a href="#">Google +</a></th>
-                                                </tr>
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </th>
-                                    </tr>
-                                  </table>
-                                </th>
-                                <th class="small-12 large-6 columns last">
-                                  <table>
-                                    <tr>
-                                      <th>
-                                        <h5>Contact Info:</h5>
-                                        <p>Phone: 408-341-0600</p>
-                                        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
-                                      </th>
-                                    </tr>
-                                  </table>
-                                </th>
                               </tr>
                             </tbody>
                           </table>
