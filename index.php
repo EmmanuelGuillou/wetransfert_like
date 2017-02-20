@@ -34,7 +34,9 @@
 			<article class="container">
 				<div class="row">
 					<div id="form_container" class="col-lg-4 col-lg-offset-6">
-						<?php require_once "view/php/form.php" ?>
+						<form class="" action="controller/send_files.php" method="post">
+							<?php require_once "view/php/form.php" ?>
+						</form>
 					</div>
 				</div>
 			</article>
