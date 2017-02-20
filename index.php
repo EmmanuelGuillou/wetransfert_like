@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<?php require_once 'model/PDO.php';  ?>
+<?php require_once 'model/PDO.php';
+
+require_once 'controller/class.form.php';
+$form = new FORM($pdo);
+?>
 <html>
 	<head>
 		<meta charset="utf-8"/>
