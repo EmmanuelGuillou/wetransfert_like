@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	
+<?php require_once 'model/PDO.php';  ?>
 <html>
 	<head>
 		<meta charset="utf-8"/>
@@ -34,7 +34,7 @@
 			<article class="container">
 				<div class="row">
 					<div id="form_container" class="col-lg-4 col-lg-offset-6">
-			
+						<?php require_once "view/php/form.php" ?>
 					</div>
 				</div>
 			</article>
