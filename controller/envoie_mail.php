@@ -22,4 +22,6 @@ mail($email_to2, $email_subject2, $email_message, $headers);
 
 }
 
+$id_fichier = "SELECT id_fichier FROM wetransfer_like WHERE url_fichier = '$fichier'";
+
 ?>
