@@ -10,6 +10,7 @@ $form = new FORM($pdo);
 		<title>Kitsune</title>
 		<meta name="Kitsune" content="files-voyager"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
 		<link rel="stylesheet" type="text/css" href="view/css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="view/css/bootstrap.min.css"/>
 	</head>
@@ -38,8 +39,35 @@ $form = new FORM($pdo);
 			<article class="container">
 				<div class="row">
 					<div id="form_container" class="col-lg-4 col-lg-offset-6">
-						<form class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
+						<form name="formulaire" class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
 							<?php require_once "view/php/form.php" ?>
+
+							<script type="text/javascript">
+
+								$(document).ready(function(){
+
+										$("form[name='formulaire']").submit(function(e) {
+										var formData = new FormData($(this)[0]);
+
+												$.ajax({
+												url: "controller/send_files.php",
+												type: "POST",
+												data: formData,
+												async: false,
+												success: function (msg) {
+												$("#form_container").html(msg);
+												},
+												cache: false,
+												contentType: false,
+												processData: false
+												});
+
+										e.preventDefault();
+										});
+								});
+
+					    </script>
+
 						</form>
 					</div>
 				</div>
