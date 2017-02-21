@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
@@ -1453,7 +1453,7 @@ body.outlook p {
                                   <table class="callout">
                                     <tr>
                                       <th class="callout-inner primary">
-                                        <p><a href="<?php echo vers le lien ?>">Link to the file</a></p>
+                                        <p><a href="'.$url.'view/php/get_file.php?fichier='.$url_file.'">Link to the file</a></p>
                                       </th>
                                       <th class="expander"></th>
                                     </tr>
@@ -1489,4 +1489,4 @@ body.outlook p {
     </table>
   </body>
 
-</html>
+</html>';
