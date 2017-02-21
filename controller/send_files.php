@@ -17,7 +17,6 @@ if(isset($_FILES['file'])){
                rename($dossier.$fichier, $extensionPhp);
 
                $namePhp = date('YmdHis').$fichier.$php;
-               $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
                $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                $query->execute(array(
                     "url_file"=>$url.$namePhp
@@ -27,7 +26,6 @@ if(isset($_FILES['file'])){
                else{
                     rename($dossier.$fichier, $dossier.date('YmdHis').$fichier);
 
-                    $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
                     $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                     $query->execute(array(
                          "url_file"=>$url.date('YmdHis').$fichier
