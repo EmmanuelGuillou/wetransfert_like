@@ -18,7 +18,7 @@ if(isset($_FILES['file'])){
                $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
                $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                $query->execute(array(
-                    "url_file"=>$url.$dossier.date('YmdHis').$fichier.$extensionPhp
+                    "url_file"=>$url.date('YmdHis').$fichier.$extensionPhp
                ));
                }
 
@@ -28,15 +28,8 @@ if(isset($_FILES['file'])){
                     $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
                     $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                     $query->execute(array(
-                         "url_file"=>$url.$dossier.date('YmdHis').$fichier
+                         "url_file"=>$url.date('YmdHis').$fichier
                     ));
                }
           }
-
-          // $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
-          // $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
-          // $query->execute(array(
-          //      "url_file"=>$url.$dossier.date('YmdHis').$fichier
-          // ));
-
 }
