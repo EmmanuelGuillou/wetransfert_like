@@ -1,6 +1,6 @@
 <?php
 require_once '../model/PDO.php';
-require_once 'envoie_mail.php';
+
 
 if(isset($_FILES['file'])){
      $dossier = '../data/';
@@ -11,6 +11,7 @@ if(isset($_FILES['file'])){
 
           if(move_uploaded_file($_FILES['file']['tmp_name'], $dossier . $fichier)){
                print_r ('Upload effectué avec succès !');
+               require_once 'envoie_mail.php';
 
                if($imageFileType == "php") {
                rename($dossier.$fichier, $extensionPhp);
@@ -32,5 +33,8 @@ if(isset($_FILES['file'])){
                          "url_file"=>$url.date('YmdHis').$fichier
                     ));
                }
+          }
+          else{
+               echo "Erreur lors du chargement du fichier.";
           }
 }
