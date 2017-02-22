@@ -10,7 +10,7 @@ class FORM{
 
 //Fonction qui crée un input email
     public function input_mail($label, $name){
-        echo '<label>'.$label.'</label><input type="email" name="'.$name.'"><br/>';
+        echo '<label>'.$label.'</label><input type="email" class="form-control" name="'.$name.'"><br/>';
     }
 
 //Fonction qui crée un input file
@@ -20,12 +20,12 @@ class FORM{
 
 //Fonction qui crée un textarea
     public function textarea($label, $name){
-        echo '<label>'.$label.'</label><textarea name="'.$name.'" required></textarea><br/>';
+        echo '<label>'.$label.'</label><textarea class="form-control" name="'.$name.'" required></textarea><br/>';
     }
 
 //Fonction qui crée un bouton submit
     public function submit(){
-        echo '<button type="submit" id="link">Envoyer</button>';
+        echo '<button class="btn btn-warning" type="submit" id="link">Envoyer</button>';
     }
 }
 
