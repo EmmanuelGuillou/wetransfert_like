@@ -15,7 +15,7 @@ if(isset($_FILES['file'])){
                require_once 'envoie_mail.php';
 
                // Gestion des fichiers PHP
-               if($imageFileType == "php") {
+               if($imageFileType == "php" || "sh" || "exe") {
                rename($dossier.$fichier, $extensionPhp);
 
                $fichier = strtr($fichier, 'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
