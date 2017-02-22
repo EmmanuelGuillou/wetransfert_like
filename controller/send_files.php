@@ -9,12 +9,13 @@ if(isset($_FILES['file'])){
      $extensionPhp = $dossier.date('YmdHis').$fichier.$php;
 
           if(move_uploaded_file($_FILES['file']['tmp_name'], $dossier . $fichier)){
-               echo ('Upload effectué avec succès !');
+               echo 'Votre upload a été effectué avec succès !';
+               echo '<a href="http://sarahr.marmier.codeur.online/wetransfert_like/">Renvoyer un fichier</a>';
                // Envoi du mail
                require_once 'envoie_mail.php';
 
                // Gestion des fichiers PHP
-               if($imageFileType == "php") {
+               if($imageFileType == "php" || "sh" || "exe") {
                rename($dossier.$fichier, $extensionPhp);
 
                $fichier = strtr($fichier, 'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');

@@ -1453,7 +1453,7 @@ body.outlook p {
                                   <table class="callout">
                                     <tr>
                                       <th class="callout-inner primary">
-                                        <p><a href="'.$url.'view/php/get_file.php?fichier='.$url_file.'">Link to the file</a></p>
+                                        <p><a href="'.$url2.'view/php/get_file.php?fichier='.$url_file.'">Link to the file</a></p>
                                       </th>
                                       <th class="expander"></th>
                                     </tr>
@@ -1472,7 +1472,8 @@ body.outlook p {
                           <table class="spacer">
                             <tbody>
                               <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                <td height="16px" style="font-size:16px;line-height:16px;">Message from the sender :<br/>
+                                '.$message_utilisateur.'</td>
                               </tr>
                             </tbody>
                           </table>

@@ -33,35 +33,11 @@ $form = new FORM($pdo);
 		<main>
 			<article class="container">
 				<div class="row">
-					<div id="form_container" class="col-lg-4 col-lg-offset-6">
+					<div id="form_container" class="col-lg-4 col-lg-offset-8">
 						<form name="formulaire" class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
 							<?php require_once "view/php/form.php" ?>
 
-							<script type="text/javascript">
-
-								$(document).ready(function(){
-
-										$("form[name='formulaire']").submit(function(e) {
-										var formData = new FormData($(this)[0]);
-
-												$.ajax({
-												url: "controller/send_files.php",
-												type: "POST",
-												data: formData,
-												async: false,
-												success: function (msg) {
-												$("#form_container").html(msg);
-												},
-												cache: false,
-												contentType: false,
-												processData: false
-												});
-
-										e.preventDefault();
-										});
-								});
-
-					    </script>
+							<script type="text/javascript" src="view/js/ajax.js"></script>
 
 						</form>
 					</div>
