@@ -1,3 +1,8 @@
+@font-face {
+    font-family: kitsune;
+    src:url(../font/bonzai.ttf);
+}
+
 body{
 	background-image: url("../svg/kitsune.svg");
 }
@@ -6,6 +11,20 @@ header{
 	background-image: url("../svg/header_kitsune.svg");
 	background-repeat:no-repeat;
 	height:200px;
+	position: relative;
+}
+
+h1{
+	font-size: 8em;
+	font-family: kitsune;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	z-index: 0;
+	position: absolute;
+	text-transform: uppercase;
 }
 
 main{
