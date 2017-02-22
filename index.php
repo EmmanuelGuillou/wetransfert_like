@@ -32,7 +32,7 @@ $form = new FORM($pdo);
 		<main>
 			<article class="container">
 				<div class="row">
-					<div id="form_container" class="col-lg-4 col-lg-offset-6">
+					<div id="form_container" class="col-lg-4 col-lg-offset-8">
 						<form class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
 							<?php require_once "view/php/form.php" ?>
 						</form>
@@ -42,7 +42,13 @@ $form = new FORM($pdo);
 		</main>
 
 		<footer>
-			<p>Emmanuel.G, Lauriane.P et Sarah.R</p>
+			<article class="container">
+				<div class="row">
+					<div id="form_container" class="col-lg-4 col-lg-offset-8">
+						<p>Emmanuel.G, Lauriane.P et Sarah.R</p>
+					</div>
+				</div>
+			</article>
 		</footer>
 	</body>
 </html>
