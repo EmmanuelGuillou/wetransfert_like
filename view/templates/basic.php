@@ -1448,12 +1448,12 @@ body.outlook p {
                               <tr>
                                 <th>
                                   <h1>Hi,</h1>
-                                  <p class="lead">You have received a file !</p>
-                                  <p>You can find the link righ below.</p>
+                                  <p class="lead">Vous avez reçu un fichier !</p>
+                                  <p>Vous pouvez le télécharger depuis le lien qui se trouve en dessous.</p>
                                   <table class="callout">
                                     <tr>
                                       <th class="callout-inner primary">
-                                        <p><a href="'.$url2.'view/php/get_file.php?fichier='.$url_file.'">Link to the file</a></p>
+                                        <p><a href="'.$url2.'view/php/get_file.php?fichier='.$url_file.'">Lien vers le fichier</a></p>
                                       </th>
                                       <th class="expander"></th>
                                     </tr>
@@ -1472,7 +1472,7 @@ body.outlook p {
                           <table class="spacer">
                             <tbody>
                               <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;">Message from the sender :<br/>
+                                <td height="16px" style="font-size:16px;line-height:16px;">Message de l'envoyeur :<br/>
                                 '.$message_utilisateur.'</td>
                               </tr>
                             </tbody>

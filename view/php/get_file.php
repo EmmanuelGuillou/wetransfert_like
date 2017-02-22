@@ -10,11 +10,11 @@ if(!empty($get_fichier)){
     $row=$file->fetch(PDO::FETCH_ASSOC);
 
     if(is_null($row)){
-        echo "Sorry, we have not been able to retrieve your file !<br/>
-        Files expire under 48 hours. You can contact the sender so he can send you the file again.";
+        echo "Désolé, nous n'avons pas réussi à retrouver votre fichier !<br/>
+        Les fichiers expirent après 48 heures, vous pouvez essayer de contacter l'envoyeur pour le récupérer.";
     }
     else{
-        echo 'Your file awaits you ! Download it by clicking the button below.
+        echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.
         <a href="http://'.$get_fichier.'" class="btn" download filename="test">Fichier</a>';
     }
 }
