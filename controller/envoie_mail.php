@@ -4,6 +4,9 @@ $url2 = "laurianep.marmier.codeur.online/wetransfert_like/";
 $data = "data/";
 $url_file = $url2.$data.date('YmdHis').$fichier;
 
+// On récupère le message de l'utilisateur
+$message_utilisateur = $_POST['message'];
+
 // Si on a bien tous les mails
 if(isset($_POST['destination_mail']) && isset($_POST['origin_mail'])){
 

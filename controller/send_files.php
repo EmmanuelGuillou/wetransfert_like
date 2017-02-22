@@ -30,7 +30,7 @@ if(isset($_FILES['file'])){
                     rename($dossier.$fichier, $dossier.date('YmdHis').$fichier);
                     $fichier = strtr($fichier, 'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
                     $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
-                    $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
+                    $url = "laurianep.marmier.codeur.online/wetransfert_like/data/";
                     $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                     $query->execute(array(
                          "url_file"=>$url.date('YmdHis').$fichier
