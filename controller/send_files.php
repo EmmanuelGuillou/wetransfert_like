@@ -9,7 +9,8 @@ if(isset($_FILES['file'])){
      $extensionPhp = $dossier.date('YmdHis').$fichier.$php;
 
           if(move_uploaded_file($_FILES['file']['tmp_name'], $dossier . $fichier)){
-               echo ('Upload effectué avec succès !');
+               echo 'Votre upload a été effectué avec succès !';
+               echo '<a href="http://sarahr.marmier.codeur.online/wetransfert_like/">Renvoyer un fichier</a>';
                // Envoi du mail
                require_once 'envoie_mail.php';
 
@@ -34,7 +35,9 @@ if(isset($_FILES['file'])){
 
                     $fichier = strtr($fichier, 'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
                     $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
-                    $url = "laurianep.marmier.codeur.online/wetransfert_like/data/";
+
+                    $url = "sarahr.marmier.codeur.online/wetransfert_like/data/";
+
                     $query = $pdo->prepare("INSERT INTO wetransfer_like (url_fichier) VALUES (:url_file)");
                     $query->execute(array(
                          "url_file"=>$url.date('YmdHis').$fichier
