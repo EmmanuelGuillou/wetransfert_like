@@ -1,6 +1,6 @@
 <?php
 
-$url2 = "laurianep.marmier.codeur.online/wetransfert_like/";
+$url2 = "sarahr.marmier.codeur.online/wetransfert_like/";
 $data = "data/";
 $url_file = $url2.$data.date('YmdHis').$fichier;
 
