@@ -14,7 +14,16 @@ if(!empty($get_fichier)){
         Les fichiers expirent après 48 heures, vous pouvez essayer de contacter l'envoyeur pour le récupérer.";
     }
     else{
-        echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.
-        <a href="http://'.$get_fichier.'" class="btn" download filename="test">Fichier</a>';
+
+        $FileType = pathinfo($get_fichier,PATHINFO_EXTENSION);
+        $FileName = pathinfo($get_fichier,PATHINFO_BASENAME);
+        if ($FileType == "php" || "sh" || "exe"){
+            echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.
+            <a href="http://'.$get_fichier.'.exept" class="btn" download="'.$FileName.'" filename="test">Fichier</a>';
+        }
+        else{
+            echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.
+            <a href="http://'.$get_fichier.'" class="btn" download filename="test">Fichier</a>';
+        }
     }
 }
