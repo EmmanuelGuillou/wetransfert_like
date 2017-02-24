@@ -1,0 +1,1 @@
+find '/home/laurianep/wetransfert_like/data/*' -mtime +1 -type f -delete
