@@ -5,7 +5,7 @@
 	 width="1920px" height="200px" viewBox="0 0 1920 200" enable-background="new 0 0 1920 200" xml:space="preserve">
 <g id="under_x5F_panneau">
 	<g id="under_x5F_panneau1">
-		<rect x="1171.282" fill="#F9EFCE" width="374.23" height="200"/>
+		<rect x="1171.282" opacity="0.7" fill="#F9EFCE" width="374.229" height="200"/>
 		<rect x="1171.282" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="1196.282" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="1171.282" y="20" fill="#7D4D1D" width="355" height="5"/>
@@ -29,13 +29,13 @@
 		<rect x="1471.282" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="1496.282" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="1521.282" fill="#7D4D1D" width="5" height="200"/>
-		<rect x="1171.282" y="180" fill="#5B3919" width="374.23" height="20"/>
-		<rect x="1171.282" fill="#5B3919" width="374.23" height="20"/>
+		<rect x="1171.282" y="180" fill="#5B3919" width="374.229" height="20"/>
+		<rect x="1171.282" fill="#5B3919" width="374.229" height="20"/>
 		<rect x="1525.514" fill="#5B3919" width="20" height="200"/>
 		<rect x="1150.92" fill="#5B3919" width="20" height="200"/>
 	</g>
 	<g id="under_x5F_panneau2">
-		<rect x="375.213" fill="#F9EFCE" width="374.23" height="200"/>
+		<rect x="375.213" opacity="0.7" fill="#F9EFCE" width="374.23" height="200"/>
 		<rect x="744.444" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="719.444" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="394.444" y="20" fill="#7D4D1D" width="355" height="5"/>
@@ -64,15 +64,16 @@
 		<rect x="375.213" fill="#5B3919" width="20" height="200"/>
 		<rect x="749.443" fill="#5B3919" width="20" height="200"/>
 	</g>
-	<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#under_x5F_panneau1" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="375" from="0">
+	
+		<animateTransform  type="translate" fill="freeze" from="0" to="375" xlink:href="#under_x5F_panneau1" calcMode="linear" additive="replace" accumulate="none" repeatCount="0" dur="4s" begin="0s" restart="always" attributeName="transform">
 		</animateTransform>
 	
-		<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#under_x5F_panneau2" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="-375" from="0">
+		<animateTransform  type="translate" fill="freeze" from="0" to="-375" xlink:href="#under_x5F_panneau2" calcMode="linear" additive="replace" accumulate="none" repeatCount="0" dur="4s" begin="0s" restart="always" attributeName="transform">
 		</animateTransform>
 </g>
 <g id="panneaux">
 	<g id="panneaux1">
-		<rect x="980.92" fill="#F9EFCE" width="374.23" height="200"/>
+		<rect x="980.92" opacity="0.7" fill="#F9EFCE" width="374.23" height="200"/>
 		<rect x="980.92" fill="#7D4D1D" width="4.999" height="200"/>
 		<rect x="1005.919" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="980.92" y="20" fill="#7D4D1D" width="355" height="5"/>
@@ -102,7 +103,7 @@
 		<rect x="1335.782" fill="#5B3919" width="20" height="200"/>
 	</g>
 	<g id="panneaux2">
-		<rect x="565.576" fill="#F9EFCE" width="374.23" height="200"/>
+		<rect x="565.576" opacity="0.7" fill="#F9EFCE" width="374.229" height="200"/>
 		<rect x="934.807" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="909.807" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="584.807" y="20" fill="#7D4D1D" width="355" height="5"/>
@@ -126,16 +127,16 @@
 		<rect x="634.807" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="609.807" fill="#7D4D1D" width="5" height="200"/>
 		<rect x="584.807" fill="#7D4D1D" width="5" height="200"/>
-		<rect x="565.576" y="180" fill="#5B3919" width="374.23" height="20"/>
-		<rect x="565.576" fill="#5B3919" width="374.23" height="20"/>
+		<rect x="565.576" y="180" fill="#5B3919" width="374.229" height="20"/>
+		<rect x="565.576" fill="#5B3919" width="374.229" height="20"/>
 		<rect x="565.576" fill="#5B3919" width="20" height="200"/>
 		<rect x="939.807" fill="#5B3919" width="20" height="200"/>
 	</g>
 	
-		<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#panneaux1" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="565" from="0">
+		<animateTransform  type="translate" fill="freeze" from="0" to="565" xlink:href="#panneaux1" calcMode="linear" additive="replace" accumulate="none" repeatCount="0" dur="4s" begin="0s" restart="always" attributeName="transform">
 		</animateTransform>
 	
-		<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#panneaux2" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="-565" from="0">
+		<animateTransform  type="translate" fill="freeze" from="0" to="-565" xlink:href="#panneaux2" calcMode="linear" additive="replace" accumulate="none" repeatCount="0" dur="4s" begin="0s" restart="always" attributeName="transform">
 		</animateTransform>
 </g>
 </svg>
