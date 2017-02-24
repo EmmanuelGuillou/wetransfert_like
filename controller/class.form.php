@@ -15,7 +15,7 @@ class FORM{
 
 //Fonction qui crée un input file
     public function input_file($label, $name){
-        echo '<label>'.$label.'</label><input type="file" name="'.$name.'"><br/>';
+        echo '<label>'.$label.'</label><input class="form-control-file" type="file" name="'.$name.'"><small id="fileHelp" class="form-text text-muted">Veuillez sélectionner des fichiers ou un dossier .zip.</small><br/>';
     }
 
 //Fonction qui crée un textarea
@@ -25,7 +25,7 @@ class FORM{
 
 //Fonction qui crée un bouton submit
     public function submit(){
-        echo '<button class="btn btn-warning" type="submit" id="link">Envoyer</button>';
+        echo '<button class="btn btn-warning" type="submit" id="link" style="margin-top: 15px; height: 41px; width: 366px;"> Envoyer </button>';
     }
 }
 
