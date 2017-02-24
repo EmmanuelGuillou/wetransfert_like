@@ -33,8 +33,14 @@ main{
 	margin: 140px 0 200px 0;
 }
 
+#form_container{
+	background-image:url("../svg/rouleau_kitsune.svg"), url("../svg/fond_formulaire.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: top, bottom;
+	padding: 0 0 8em 0;
+}
 
-.svg{
-	margin:auto;
-	width:93%;
+form{
+	width: 85%;
+	padding: 4em 0 3em 4em;
 }

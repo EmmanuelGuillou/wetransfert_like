@@ -174,7 +174,7 @@ $form = new FORM($pdo);
 		<footer>
 			<article class="container">
 				<div class="row">
-					<div id="form_container" class="col-lg-4 col-lg-offset-8">
+					<div class="col-lg-4 col-lg-offset-8">
 						<p>Emmanuel.G, Lauriane.P et Sarah.R</p>
 					</div>
 				</div>
