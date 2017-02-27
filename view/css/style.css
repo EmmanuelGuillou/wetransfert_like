@@ -37,7 +37,7 @@ main{
 	background-image:url("../svg/rouleau_kitsune.svg"), url("../svg/fond_formulaire.svg");
 	background-repeat: no-repeat, no-repeat;
 	background-position: top, bottom;
-	padding: 0 0 8em 0;
+	padding: 2em 0 8em 0;
 }
 
 form{
