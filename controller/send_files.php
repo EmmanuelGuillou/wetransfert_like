@@ -9,8 +9,8 @@ if(isset($_FILES['file'])){
      $extensionPhp = $dossier.date('YmdHis').$fichier.$php;
 
           if(move_uploaded_file($_FILES['file']['tmp_name'], $dossier . $fichier)){
-               echo 'Votre upload a été effectué avec succès !';
-               echo '<a href="http://sarahr.marmier.codeur.online/wetransfert_like/">Renvoyer un fichier</a>';
+               echo '<div style="padding-left: 17%; padding-top: 10%; color:black">Votre upload a été effectué avec succès !<br>';
+               echo '<br><a class="btn btn-warning" href="http://sarahr.marmier.codeur.online/wetransfert_like/">Renvoyer un fichier</div></a>';
                // Envoi du mail
                require_once 'envoie_mail.php';
 
