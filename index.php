@@ -82,7 +82,7 @@ $form = new FORM($pdo);
 					</g>
 					<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#under_x5F_panneau1" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="375" from="0">
 						</animateTransform>
-					
+
 						<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#under_x5F_panneau2" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="-375" from="0">
 						</animateTransform>
 				</g>
@@ -147,15 +147,15 @@ $form = new FORM($pdo);
 						<rect x="565.576" fill="#5B3919" width="20" height="200"/>
 						<rect x="939.807" fill="#5B3919" width="20" height="200"/>
 					</g>
-					
+
 						<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#panneaux1" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="565" from="0">
 						</animateTransform>
-					
+
 						<animateTransform  fill="freeze" type="translate" repeatCount="0" xlink:href="#panneaux2" accumulate="none" additive="replace" calcMode="linear" attributeName="transform" dur="4s" restart="always" begin="0s" to="-565" from="0">
 						</animateTransform>
 				</g>
 			</svg>
-			
+
 			<h1>kitsune</h1>
 		</header>
 
@@ -164,7 +164,12 @@ $form = new FORM($pdo);
 				<div class="row">
 					<div id="form_container" class="col-lg-4 col-lg-offset-8">
 						<form name="formulaire" class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
-							<?php require_once "view/php/form.php" ?>
+							<?php if(empty($_GET['fichier'])){
+								require_once "view/php/form.php";
+							}
+							else{
+								require_once "view/php/get_file.php";
+							} ?>
 						</form>
 					</div>
 				</div>
@@ -180,7 +185,7 @@ $form = new FORM($pdo);
 				</div>
 			</article>
 		</footer>
-		
+
 		<script type="text/javascript">
 
 			$(document).ready(function(){
@@ -206,6 +211,6 @@ $form = new FORM($pdo);
 			});
 
 		</script>
-		
+
 	</body>
 </html>
