@@ -1,5 +1,7 @@
 <?php
 
+// exec('crontab ../../controller/crontab.txt');
+
 $get_fichier = $_GET['fichier'];
 
 $chemin = '/home/sarahr/wetransfert_like/data';
@@ -29,7 +31,7 @@ if(!empty($get_fichier)){
         $FileName = pathinfo($get_fichier,PATHINFO_BASENAME);
         // if ($FileType == "php" || "sh" || "exe"){
             echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.<br/>
-            <a href="http://'.$get_fichier.'.exept" class="btn btn-warning download" download="'.$FileName.'" filename="test">Fichier</a>';
+            <a href="http://'.$get_fichier.'.exept" class="btn btn-warning" download="'.$FileName.'" filename="test">Fichier</a>';
         // }
         // else{
         //     echo 'Votre fichier vous attend ! Téléchargez le en cliquant sur le bouton ici.

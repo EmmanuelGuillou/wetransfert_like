@@ -5,12 +5,14 @@
 
 body{
 	background-image: url("../svg/kitsune.svg");
+	/*background-size : contain;*/
+	background-repeat: no-repeat;
 }
 
 header{
 	background-image: url("../svg/header_kitsune.svg");
 	background-repeat:no-repeat;
-	background-size: 100%;
+	background-size: contain;
 	height:200px;
 	position: relative;
 	width: 100%;
@@ -30,11 +32,13 @@ h1{
 }
 
 main{
+	width: 100%;
 	margin: 3% 0 1% 0;
 }
 
 #form_container{
 	background-image:url("../svg/rouleau_kitsune.svg"), url("../svg/fond_formulaire.svg");
+	background-size : contain, contain;
 	background-repeat: no-repeat, no-repeat;
 	background-position: top, bottom;
 	padding: 2em 0 8em 0;
@@ -43,4 +47,64 @@ main{
 form{
 	width: 85%;
 	padding: 4em 0 3em 4em;
+}
+
+@media screen and (max-width: 1500px) {
+	body{
+		background-color: #616F2B;
+		background-repeat: no-repeat;
+		background-size : contain;
+	}
+	header svg{
+		width: 100%;
+	}
+	#Calque_1{
+		height: 100%;
+	}
+	header{
+		height:100%;
+	}
+	h1{
+		font-size: 4em;
+	}
+	main{
+		margin:0;
+	}
+
+	footer p{
+ 		display: none;
+	}
+	#form_container{
+		padding: 4em 0 4.5em 0;
+		margin-top: 6%;
+	}
+}
+@media screen an1600d (max-width: 900px) {
+	body{
+		background-color: #616F2B;
+		background-repeat: no-repeat;
+	}
+	header svg{
+		width: 100%;
+	}
+	#Calque_1{
+		height: 120px;
+	}
+	header{
+		height:150px;
+	}
+	h1{
+		font-size: 2em;
+	}
+	main{
+		margin:0;
+	}
+
+	footer p{
+ 		display: none;
+	}
+	#form_container{
+		height: 100%;
+		width: 100%;
+	}
 }
