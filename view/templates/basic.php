@@ -1453,7 +1453,7 @@ body.outlook p {
                                   <table class="callout">
                                     <tr>
                                       <th class="callout-inner primary">
-                                        <p><a href="'.$url2.'view/php/get_file.php?fichier='.$url_file.'">Link to the file</a></p>
+                                        <p><a href="'.$url2.'index.php?fichier='.$url_file.'">Link to the file</a></p>
                                       </th>
                                       <th class="expander"></th>
                                     </tr>
