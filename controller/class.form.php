@@ -25,7 +25,7 @@ class FORM{
 
 //Fonction qui crée un bouton submit
     public function submit(){
-        echo '<button class="btn btn-warning" type="submit" id="link" style="margin-top: 15px; height: 41px; width: 366px;"> Envoyer </button>';
+        echo '<button class="btn btn-warning" type="submit" id="link" style="margin-top: 15px; height: 41px; width: 280px;"> Envoyer </button>';
     }
 }
 

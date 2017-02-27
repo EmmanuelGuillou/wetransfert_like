@@ -17,7 +17,7 @@ $form = new FORM($pdo);
 
 	<body>
 		<header>
-			<svg style="z-index:2; position:relative; left:0px; top:0px;" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<svg style="z-index:2; position:relative; left:0px; top:0;" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			width="1920px" height="200px" viewBox="0 0 1920 200" enable-background="new 0 0 1920 200" xml:space="preserve">
 				<g id="under_x5F_panneau">
 					<g id="under_x5F_panneau1">
@@ -162,7 +162,7 @@ $form = new FORM($pdo);
 		<main>
 			<article class="container">
 				<div class="row">
-					<div id="form_container" class="col-lg-4 col-lg-offset-8">
+					<div id="form_container" style="height: 619px;" class="col-md-5 col-lg-4 col-md-offset-7 col-lg-offset-8">
 						<form name="formulaire" class="" action="controller/send_files.php" method="post" enctype="multipart/form-data">
 							<?php if(empty($_GET['fichier'])){
 								require_once "view/php/form.php";
@@ -179,7 +179,7 @@ $form = new FORM($pdo);
 		<footer>
 			<article class="container">
 				<div class="row">
-					<div class="col-lg-4 col-lg-offset-8">
+					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-8">
 						<p>Emmanuel.G, Lauriane.P et Sarah.R</p>
 					</div>
 				</div>
